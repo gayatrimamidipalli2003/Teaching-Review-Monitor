@@ -1,0 +1,72 @@
+html 
+    head 
+        style.  
+            table,tr,td{
+                margin:auto;
+                padding:10px;
+                border-radius:5px;
+                border:1px solid white;
+                //- color:white;
+                margin-top:50px;
+                width:600px;
+            }
+            body{
+                 background-image:url(view.png);
+                  background-size:100%;
+            }
+            img{
+                 height:200px;
+                 width:500px;
+                 margin-left:470px;
+                 margin-top:150px;
+            }
+            h1{
+                 text-align: center;
+                 color:white;
+                 margin-top:150px;
+            }
+            .progress-bar {
+                 width: 300px;
+                 height: 20px;
+                 background-color: darkgrey;
+                 border-radius: 10px;
+                 margin: 5px auto;
+                 position: relative;
+                 overflow: hidden;
+            }
+            .progress {
+                 width: 0%;
+                 height: 100%;
+                 border-radius: 10px;
+                 animation: progressAnimation 2s ease-out forwards;
+                 text-align:center;
+            }
+            @keyframes progressAnimation {
+                 from {
+                      width: 0%;
+                      background: linear-gradient(to right, white, white);
+                  }
+                 to {
+                      background: linear-gradient(to right, white, white);
+                      each i in p
+                            width: ${i.per}%; /* Corrected interpolation syntax */
+                 }
+             }
+             .s1{
+                margin-left:600px;
+                width:200px;
+                height:50px;
+                font-size:25px;
+                margin-top:30px;
+                background-color:transparent;
+                color:white;
+             }
+    body  
+        h1="FACULTY FEEDBACK"
+        table
+            each i in p
+                tr 
+                    td(style="color:white")=i.name 
+                    td
+                        .progress-bar
+                            .progress(style=`width: ${i.per}%`) #{i.per}%             

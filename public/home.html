@@ -1,0 +1,94 @@
+<html>
+    <head>
+        <style>
+            body{
+                /* background-color:salmon; */
+                background-image: url(home2.png);
+                background-repeat: no-repeat;
+                background-size: 100%;
+            }
+            
+            h1{
+                font-size: 70px;
+                text-align: center;
+                font-family: Courier;
+                margin-top: 30px;
+                margin-left: 30px;
+                color:white;
+                animation-name: display;
+                animation-duration: 2s;
+                animation-iteration-count: infinite;
+                animation-direction: alternate;
+                animation-timing-function: ease-in-out;
+            }
+            h3{
+                font-size:70px;
+                margin-left:530px;
+                font-family: Courier;
+                margin-top: 5px;
+                color:white;
+                animation-name: display;
+                animation-duration: 2s;
+                animation-iteration-count: infinite;
+                animation-direction: alternate;
+                animation-timing-function: ease-in-out;
+            }
+            @keyframes display{
+                from{
+                         text-shadow: 5px 5px 10px blue,5px 5px 30px blue,5px 5px 40px blue;
+                }
+                to{
+                          text-shadow: 0px 0px 10px blue,0px 0px 30px blue,0px 0px 40px blue;
+               }
+            }
+            .d2{
+                margin-left: 400px;
+                margin-top: 70px;
+            }
+            h2{
+                color:white;
+                margin-left:500px;
+                margin-top:100px;
+                font-size:50px;
+            }
+            input{
+                text-align: center;
+                background-color: transparent;
+                color:white;
+                font-size: 50px;
+                height:100px;
+                width:300px;
+                border-radius:5px;
+                border-color:white;
+            }
+            ::placeholder{
+                color:white;
+            }
+        </style>
+    </head>
+    <body>
+             <!-- <img src="home.png"> -->
+             <h1>ADITYA COLLEGE OF ENGINEERING</h1>
+             <h3>CSE</h3>
+        <h2>Faculty Feedback</h2>
+        <div class="d2" id="d">
+            <form id="form">
+            <input type="text" id="t1" placeholder="Enter Key">
+            <input type="submit" id="s1">
+        </form>
+        </div>
+    </body>
+    <script>
+            let s=document.getElementById('form');
+            s.addEventListener('submit',(e)=>{
+                e.preventDefault();
+                let text=document.getElementById('t1').value;
+                 if(text === 'ACOECSE'){
+                    window.location.href = 'feedback.html';
+                 }
+                 else{
+                    alert("Enter correct key");
+                 }
+            })   
+    </script>
+</html>

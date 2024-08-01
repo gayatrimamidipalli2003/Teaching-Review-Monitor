@@ -1,0 +1,55 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    title Student Data
+    style.
+       body{
+        background-image:url(view.png);
+        background-size:100%;
+       }
+     img{
+        height:200px;
+        width:500px;
+        margin-left:470px;
+        margin-top:150px;
+     }
+      h1{
+          text-align: center;
+          color:white;
+          font-family: courier;
+      }
+      .progress-bar {
+          width: 300px;
+          height: 20px;
+          background-color: darkgrey;
+          border-radius: 10px;
+          margin: 5px auto;
+          position: relative;
+          overflow: hidden;
+      }
+      .progress {
+          width: 0%;
+          height: 100%;
+          border-radius: 10px;
+          animation: progressAnimation 2s ease-out forwards;
+          text-align:center;
+      }
+      @keyframes progressAnimation {
+          from {
+              width: 0%;
+              background: linear-gradient(to right, white, white);
+          }
+          to {
+               background: linear-gradient(to right, white, white);
+               width: #{avg}%; /* Corrected interpolation syntax */
+          }
+      }
+  body
+    img(src='star.png')
+    div
+        h1=name
+        p
+           .progress-bar
+               .progress(style=`width: ${avg}%`) #{avg}%

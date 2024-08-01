@@ -1,0 +1,90 @@
+<html>
+    <head>
+        <style>
+           img{
+               /* margin-left: 200px; */
+               height: 100px;
+               width:100%;
+               background-repeat: no-repeat;
+               background-color:transparent;
+               /* background-size:cover; */
+           }
+           form{
+               /* margin-left: 300px; */
+               font-size: 20px;
+               margin-top: 50px;
+               color:aliceblue;
+           }
+           input{
+            margin-left: 20px;
+            background-color:transparent;
+            color:aliceblue;
+           }
+           .s{
+             margin-left: 300px;
+             font-size: 30px;
+             width:200px;
+             border-color:white;
+           }
+           body{
+            /* background-color:aquamarine; */
+            background-image: url(logo1.png);
+            background-repeat: no-repeat;
+            background-size:100%;
+           }
+        </style>
+    </head>
+    <body>
+       <img src="logo.png">
+       <form id="form" action="./postdata" method="post">
+            <label>1.Y DURGA PRASAD - MEANSTACK</label><br><br>
+            <input type="radio" name="ydp" id="ydp" value="100" required>EXCELLENT
+            <input type="radio" name="ydp" id="ydp" value="90" required>VERY GOOD
+            <input type="radio" name="ydp" id="ydp" value="80" required>GOOD
+            <input type="radio" name="ydp" id="ydp" value="70" required>AVERAGE
+            <input type="radio" name="ydp" id="ydp" value="60" required>BELOW AVERAGE<br><br>
+            <label>2.V VEERA PRASAD - COMPILER DESIGN</label><br><br>
+            <input type="radio" name="vvp" value="100">EXCELLENT
+            <input type="radio" name="vvp" value="90">VERY GOOD
+            <input type="radio" name="vvp" value="80">GOOD
+            <input type="radio" name="vvp"  value="70">AVERAGE
+            <input type="radio" name="vvp" value="60">BELOW AVERAGE<br><br>
+            <label>3.PNS LAKSHMI - MACHINE LEARNING</label><br><br>
+            <input type="radio" name="pns" value="100">EXCELLENT
+            <input type="radio" name="pns" value="90">VERY GOOD
+            <input type="radio" name="pns" value="80">GOOD
+            <input type="radio" name="pns" value="70">AVERAGE
+            <input type="radio" name="pns" value="60">BELOW AVERAGE<br><br>
+            <label>4.GSN MURTHY - MOBILE  COMPUTING</label><br><br>
+            <input type="radio" name="gsn" value="100">EXCELLENT
+            <input type="radio" name="gsn" value="90">VERY GOOD
+            <input type="radio" name="gsn" value="80">GOOD
+            <input type="radio" name="gsn" value="70">AVERAGE
+            <input type="radio" name="gsn" value="60">BELOW AVERAGE<br><br>
+            <label>5.RAMAKRISHNA - CRYPTOGRAPHY</label><br><br>
+            <input type="radio" name="rk" value="100">EXCELLENT
+            <input type="radio" name="rk" value="90">VERY GOOD
+            <input type="radio" name="rk" value="80">GOOD
+            <input type="radio" name="rk" value="70">AVERAGE
+            <input type="radio" name="rk" value="60">BELOW AVERAGE<br><br><br>
+            <input type="submit" class="s">
+       </form>
+    </body>
+     <script src="index.js"></script>
+        <!-- let f=document.getElementById('form');
+        f.addEventListener('submit',(e)=>{
+            e.preventDefault();
+        //     let ydpRadios = document.getElementsByName('ydp');
+        //     let selectedValue;
+        //     ydpRadios.forEach(radio => {
+        //       if (radio.checked) {
+        //         selectedValue = radio.value;
+        //       }
+        //    });
+           alert('Your response has been recorded');
+        //    window.location.href = 'home.html';
+        })
+    </script> -->
+</html>
+
+

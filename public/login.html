@@ -1,0 +1,48 @@
+<html>
+    <head>
+        <style>
+            body{
+                background-image: url(login.png);
+                background-repeat: no-repeat;
+                background-size: 100%;
+            }
+            form{
+                margin-left:900px;
+                margin-top:50px;
+                
+            }
+            input{
+                height:50px;
+                width:300px;
+                background-color: transparent;
+                border-radius: 10px;
+                border-color: white;
+                color:white;
+                font-size:20px;
+            }
+            h1{
+                margin-top:220px;
+                margin-left:920px;
+                font-size: 50px;
+                color:white;
+                text-shadow: 5px 5px 5px white;
+            }
+            ::placeholder{
+                color:white;
+                font-size:20px;
+            }
+            .s1{
+                font-size:30px;
+                color:white;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Login Form</h1>
+        <form action="./check" method="post">
+            <input type="text" name="name1" placeholder="Enter name"><br><br>
+            <input type="password" name="password1" placeholder="Enter password"><br><br>
+            <input type="submit"  class="s1">
+        </form>
+    </body>
+</html>
